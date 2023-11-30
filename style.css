@@ -1,0 +1,189 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* font-size: 10px; */
+  background-color: darkgray;
+  overflow-y: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.m-container {
+  display: grid;
+  background-color: black;
+  min-width: 700px;
+  /* Add the appropriate unit (e.g., pixels) */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.m-header {
+  grid-row: 1;
+  /* Set the grid row to 1 to make it the first row */
+  height: auto;
+  /* Set a specific height or use auto to adjust based on content */
+  /* margin-bottom: -100px; */
+  /* Add margin to create space between the header and the content below */
+}
+
+.m-header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8A3E2B;
+  padding: 10px;
+  margin-top: 0;
+  /* border-radius: 10px; */
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.m-1,
+.m-2 {
+  border-bottom: 1px solid white;
+  /* Adjust the thickness and color as needed */
+  padding-bottom: 10px;
+  /* Add padding to separate the content from the border */
+  margin-bottom: 10px;
+  /* Add margin to create space between elements */
+}
+
+.sections {
+  text-align: center;
+}
+
+.sections button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sections button:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.totalamount {
+  color: limegreen;
+  font-size: 2rem;
+}
+
+
+div {
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+li,
+ul {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#resetall {
+  margin-bottom: 2rem;
+}
+
+#workList {
+  max-height: 18rem;
+  /* Set the maximum height as needed */
+  overflow-y: auto;
+  /* Add scrollbar when content overflows */
+  padding: 0;
+  /* Remove default padding */
+}
+
+span,
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.totalamountafter {
+  color: limegreen;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    background-color: #A9A9A9;
+    /* MOBILE */
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 150px;
+    height: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .m-container {
+    min-width: auto;
+    border-radius: 0;
+    
+  }
+
+  .m-header h1 {
+    font-size: 2rem;
+
+  }
+
+  input {
+    width: 40%;
+
+  }
+
+
+
+}

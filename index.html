@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="m-container">
+    <div class="m-header">
+      <h1>
+        Shift Split Calculator
+      </h1>
+    </div>
+    <div class="m-1">
+      <h3>
+        Amount Needed To Split
+      </h3>
+      <div class="sections">
+        <input type="text" id="tipAmount" name="tipAmount" placeholder="Enter $ amount">
+        <!-- <button type="button" id="calculateButton">Amount</button> -->
+        <br>
+        <span class="totalamount">$0.00</span>
+      </div>
+    </div>
+    <div class="m-2">
+      <h3>
+        # OF People / hours worked per person.
+      </h3>
+      <div class="sections">
+        <input type="text" id="numberOfPeople" name="numberOfPeople" placeholder="# Of People">
+        <!-- <button type="button" id="calculateWorkButton">Generate</button> -->
+        <ul id="workList"></ul>
+      </div>
+      <br>
+      <div class="sections">
+
+        <input type="text" id="hoursPerPerson" name="hoursPerPerson" readonly placeholder="Total Amount Of Hours">
+        <br>
+        <span id="calculateWorkButton"> Total Hours</span>
+        <br>
+        <p>1 Hour = <span class="totalamountafter">$</span></p>
+      </div>
+    </div>
+    <div class="m-3">
+      <h3>
+        <div class="sections">
+          <button type="button" id="resetall">Reset</button>
+        </div>
+        Coded By William Kostreski
+
+      </h3>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+
+
+</body>
+
+</html>
